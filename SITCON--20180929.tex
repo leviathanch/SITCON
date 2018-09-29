@@ -26,8 +26,7 @@
 \newfontfamily\cjkfont{Noto Sans CJK SC} % Or any appropriate font you have
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
-
-
+\setbeamersize{text margin left=5pt,text margin right=5pt}
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -42,6 +41,7 @@
 \date{\today} % Date, can be changed to a custom date
 
 \begin{document}
+\cjkfont
 
 \begin{frame}
 \titlepage % Print the title page as the first slide
@@ -94,7 +94,7 @@
 		\item You're going to a foundry
 		\item Signing at least 3 NDAs, one for the PDK\footnote{Process design kit}, one for the standard cell libary and one for purchase details
 		\item Invest a lot of money for the layout development and the mask set
-		\item And have some reasons to change the Foundry Service\dots
+		\item And have some reasons to change the foundry service\dots
 	\end{itemize}
 \end{frame}
 
@@ -118,7 +118,7 @@
 	\centering
 	\hspace*{-0.3in}
 	\includegraphics[width=0.75\textwidth]{market-closing.png} \\
-	\footnote{http://semimd.com/favre/2016/08/24}
+	\footnote{\url{http://semimd.com/favre/2016/08/24}}
 \end{frame}
 
 
@@ -162,24 +162,38 @@
 \frametitle{Helpful links}
 \begin{itemize}
 	\item Mailing list \\
-	\url{https://list.o2s.ch/mailman/listinfo/libre-silicon-devel}
+		\url{https://list.o2s.ch/mailman/listinfo/libre-silicon-devel}
 	\item Process \\
-	\url{https://github.com/libresilicon/libresiliconprocess}
-	\item Test wafer (\cjkfont 珠江芯片一号) \\
-	\url{https://github.com/chipforge/PearlRiver}
+		\url{https://github.com/libresilicon/libresiliconprocess}
+	\item Test wafer (珠江芯片一号) \\
+		\url{https://github.com/chipforge/PearlRiver}
 	\item Standard cell library \\
-	\url{https://github.com/chipforge/StdCellLib}
+		\url{https://github.com/chipforge/StdCellLib}
 	\item Layout software/EDA \\
-	\url{https://github.com/leviathanch/qtflow}
+		\url{https://github.com/leviathanch/qtflow}
 \end{itemize}
 \Huge{\centerline{You can help :-)}}
 \end{frame}
 
-\begin{frame}{PearlRiver (\cjkfont 珠江芯片一号) screen shots}
-	\includegraphics[width=100pt]{Screenshot_20180929_015838.png}\footnote{PearlRiver}
-	\includegraphics[width=100pt]{Screenshot_20180929_020016.png}\footnote{Bonding pad}
-	\includegraphics[width=100pt]{Screenshot_20180929_023204.png}\footnote{Holy apple of divine discord}
+\begin{frame}{PearlRiver (珠江芯片一号) screen shots}
+	\frametitle{PearlRiver}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Screenshot_20180929_015838.png}
 \end{frame}
+
+\begin{frame}{PearlRiver (珠江芯片一号) screen shots}
+	\frametitle{Bonding pad}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Screenshot_20180929_020016.png}
+\end{frame}
+
+\begin{frame}{PearlRiver (珠江芯片一号) screen shots}
+	\frametitle{Holy apple of divine discord}
+	\centering
+	\includegraphics[width=0.75\textwidth]{Screenshot_20180929_023204.png}
+\end{frame}
+
+
 
 \begin{frame}{QtFlow screen shots}
 	\includegraphics[width=100pt]{Screenshot_20171218_044022.png}
@@ -199,7 +213,7 @@
 \begin{frame}
 	\frametitle{TODO}
 	\begin{itemize}
-		\item Shrink PearlRiver(\cjkfont 珠江芯片一号) test wafer
+		\item Shrink PearlRiver( 珠江芯片一号) test wafer
 		\item Next review before ordering the masks
 		\item Documentation about what and how we like to measure parameters
 		\item Transfer parameters into Spice BSIM3v3 models
@@ -207,7 +221,7 @@
 		\item Process refinement
 		\item Finish standard cells
 		\item Install process foundry for mass production
-		\item Manufacture first microcontroller chip in 2019 (\cjkfont 北角芯片)
+		\item Manufacture first microcontroller chip in 2019 (北角芯片)
 	\end{itemize}
 \end{frame}
 
@@ -254,7 +268,7 @@
 		\item We developed the first version of our 1um LibreSilicon process
 		\item We are working on the standard cell library
 		\item We already held a tool chain hackathon
-		\item We are layouting a first test wafer(\cjkfont 珠江芯片一号) for technology parameter measurement
+		\item We are layouting a first test wafer({珠江芯片一号}) for technology parameter measurement
 		\item Currently reviewing the test wafer and compress the layout now for more chips per wafer.
 	\end{itemize}
 \end{frame}
@@ -264,7 +278,7 @@
 	\begin{itemize}
 	\item Process \\
 		\url{https://github.com/libresilicon/libresiliconprocess}
-	\item Test wafer (\cjkfont 珠江芯片一号) \\
+	\item Test wafer (珠江芯片一号) \\
 		\url{hhttps://github.com/chipforge/PearlRiver}
 	\item Standard cell library \\
 		\url{hhttps://github.com/chipforge/StdCellLib}
@@ -323,7 +337,7 @@
 
 \begin{frame}{Thanks!}
 	\begin{center}
-		\textbf{\cjkfont 非常感谢你们!} \\
+		\textbf{非常感谢你们!} \\
 		\textbf{Thank you very much!} \\
 		\includegraphics[width=100pt]{cat.png}
 	\end{center}
